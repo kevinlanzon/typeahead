@@ -1,0 +1,24 @@
+{
+  "name": "typeahead",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1",
+    "pretest": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinlanzon/typeahead.git"
+  },
+  "author": "Kevin Lanzon <kevinlanzon@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinlanzon/typeahead/issues"
+  },
+  "homepage": "https://github.com/kevinlanzon/typeahead#readme",
+  "dependencies": {
+    "http-server": "0.10.0"
+  }
+}
