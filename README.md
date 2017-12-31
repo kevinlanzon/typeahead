@@ -7,7 +7,8 @@ Setup
 $ git clone git@github.com:kevinlanzon/typeahead.git
 $ cd typeahead
 $ npm start
-Open http://localhost:8000.
+
+Open http://localhost:8000
 ```
 
 Technologies used
