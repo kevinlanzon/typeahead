@@ -1,4 +1,4 @@
-app.directive('search', function() {
+app.directive('search', function($timeout) {
   return {
     scope: {
       results: '=',
@@ -10,10 +10,10 @@ app.directive('search', function() {
     scope.selectResult = function(result) {
       scope.model = result;
 
-      setTimeout(function() {
+      $timeout(function() {
         scope.select();
-      }, 0);
-      
+      });
+
     };
   },
     templateUrl: 'views/search-results.html'
