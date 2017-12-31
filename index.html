@@ -7,10 +7,19 @@
 </head>
 <body ng-controller="SearchController as searchCtrl">
 
-  {{searchCtrl.countries}}
+  <div ng-controller="SearchController as searchCtrl">
+    <search
+      placeholder="searchCtrl.placeholder"
+      model="searchCtrl.name"
+      results="searchCtrl.countries"
+      select="searchCtrl.viewDetails()">
+    </search>
+  </div>
 
   <script type="text/javascript" src="js/app.js"></script>
   <script type="text/javascript" src="js/controllers/searchController.js"></script>
   <script type="text/javascript" src="js/services/getDataFactory.js"></script>
+  <script type="text/javascript" src="js/directives/searchDirective.js"></script>
+
 </body>
 </html>

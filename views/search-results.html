@@ -1,0 +1,13 @@
+<input
+  placeholder="{{placeholder}}"
+  ng-model="model"
+  ng-keydown="selected=false"
+  autofocus="autofocus">
+
+<div
+ class="result"
+  ng-if="model.length"
+  ng-repeat="result in results | filter: model"
+  ng-click="selectResult(result.name)">
+  <span>{{result.name}}</span>
+</div>

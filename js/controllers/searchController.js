@@ -1,7 +1,12 @@
 app.controller('SearchController', function(getDataFactory) {
 
 	// Data
-	var vm = this;
+  var vm = this;
+  vm.name = '';
+  vm.placeholder = 'Search for a country';
+
+	// View Functions
+	vm.viewDetails = viewDetails;
 
   // Initialize
   getCountries();
@@ -12,5 +17,9 @@ app.controller('SearchController', function(getDataFactory) {
       vm.countries = res.data;
     });
   }
+
+  function viewDetails() {
+		console.log(vm.name);
+	}
 
 });
