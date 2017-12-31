@@ -1,13 +1,13 @@
 <div class="details" ng-controller="DetailsController as detailsCtrl">
 
-  <div style="details-list">
+  <div class="details-list">
     <h2>
       {{detailsCtrl.name}}
     </h2>
   </div>
 
   <div class="details-list">
-    <img style="width:22%" ng-src="{{detailsCtrl.flag}}">
+    <img ng-src="{{detailsCtrl.flag}}">
   </div>
 
   <div class="details-list">
@@ -26,7 +26,7 @@
     Population: <span>{{detailsCtrl.population}}</span>
   </div>
 
-  <div style="details-list">
+  <div class="details-list">
     <button ng-click="detailsCtrl.back()">Back</button>
   </div>
 </div>
