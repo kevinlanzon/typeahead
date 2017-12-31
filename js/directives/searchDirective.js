@@ -9,7 +9,11 @@ app.directive('search', function() {
   link: function(scope, elem, attrs) {
     scope.selectResult = function(result) {
       scope.model = result;
-      scope.select();
+
+      setTimeout(function() {
+        scope.select();
+      }, 0);
+      
     };
   },
     templateUrl: 'views/search-results.html'
