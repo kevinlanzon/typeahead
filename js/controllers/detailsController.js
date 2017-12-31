@@ -1,6 +1,6 @@
 app.controller('DetailsController', function($window, $state, getDataFactory) {
 
-	// Data
+  // Data
   var vm = this;
   var name = $state.params.name;
   vm.back = back;

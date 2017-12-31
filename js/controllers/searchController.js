@@ -1,6 +1,6 @@
 app.controller('SearchController', function($state, getDataFactory) {
 
-	// Data
+  // Data
   var vm = this;
   vm.name = '';
   vm.placeholder = 'Search for a country';
