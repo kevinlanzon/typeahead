@@ -5,7 +5,6 @@
   autofocus="autofocus">
 
 <div
-  class="result"
   ng-if="model.length"
   ng-repeat="result in results | filter: model"
   ng-click="selectResult(result.name)">

@@ -10,5 +10,14 @@ $stateProvider
       }
     }
   })
-  
+
+  .state('details', {
+    url: '/details/{name}',
+    views: {
+      content: {
+      templateUrl: 'views/details.html'
+      }
+    }
+  });
+
 });

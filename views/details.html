@@ -1,0 +1,33 @@
+<div ng-controller="DetailsController as detailsCtrl">
+
+  <div>
+    <h2>
+      {{detailsCtrl.name}}
+    </h2>
+  </div>
+
+  <div  class="">
+    <img ng-src="{{detailsCtrl.flag}}">
+  </div>
+
+  <div class="">
+    Captial: <span>{{detailsCtrl.capital}}</span>
+  </div>
+
+  <div class="">
+    Currency: <span>{{detailsCtrl.currency}}</span>
+  </div>
+
+  <div class="">
+    Language: <span>{{detailsCtrl.language}}</span>
+  </div>
+
+  <div class="">
+    Population: <span>{{detailsCtrl.population}}</span>
+  </div>
+
+  <div class="">
+    <button
+    ng-click="detailsCtrl.back()">Back</button>
+  </div>
+</div>

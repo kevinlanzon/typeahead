@@ -1,4 +1,4 @@
-app.controller('SearchController', function(getDataFactory) {
+app.controller('SearchController', function($state, getDataFactory) {
 
 	// Data
   var vm = this;
@@ -19,7 +19,9 @@ app.controller('SearchController', function(getDataFactory) {
   }
 
   function viewDetails() {
-    console.log(vm.name);
+    $state.go('details', {
+      'name': vm.name
+    });
   }
 
 });
