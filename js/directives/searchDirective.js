@@ -1,19 +1,15 @@
-app.directive('search', function($timeout) {
+app.directive('search', function() {
   return {
     scope: {
       results: '=',
       placeholder: '=',
       model: '=',
-      select: '&'
+      select: '='
     },
-  link: function(scope, elem, attrs) {
+  link: function(scope, element, attrs) {
     scope.selectResult = function(result) {
       scope.model = result;
-
-      $timeout(function() {
-        scope.select();
-      });
-
+      scope.select(result);
     };
   },
     templateUrl: 'views/search-results.html'

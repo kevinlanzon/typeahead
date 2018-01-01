@@ -18,9 +18,9 @@ app.controller('SearchController', function($state, getDataFactory) {
     });
   }
 
-  function viewDetails() {
+  function viewDetails(name) {
     $state.go('details', {
-      'name': vm.name
+      'name': name
     });
   }
 

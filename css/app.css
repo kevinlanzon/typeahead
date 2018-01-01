@@ -16,14 +16,14 @@ body {
 }
 
 input {
-  width: 40%;
+  width: 30%;
   font-size: 30px;
   margin-top: 20px;
   padding: 15px;
 }
 
 .results {
-  width: 40%;
+  width: 30%;
   font-size: 20px;
   background: white;
   cursor: pointer;
@@ -49,12 +49,13 @@ input {
   padding: 20px;
 }
 
-.details-list  span {
+.details-list span {
   font-weight: bold;
 }
 
-.details-list  img {
+.details-list img {
   width: 22%;
+  border: solid 1px #f2f2f2;
 }
 
 button {
@@ -69,4 +70,10 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 910px) {
+  input {
+    font-size: 14px;
+  }
 }
