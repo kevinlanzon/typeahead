@@ -3,7 +3,7 @@ app.config(function($stateProvider) {
 $stateProvider
 
   .state('search', {
-    url: '/',
+    url: '',
     views: {
       content: {
       templateUrl: 'views/search.html'
