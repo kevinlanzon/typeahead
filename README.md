@@ -15,8 +15,9 @@ Technologies used
 ----
 - AngularJs
 - http-server
+- https://restcountries.eu/ 
 
-File Structure
+File structure
 ----------------
 ```
 - css
@@ -32,7 +33,7 @@ File Structure
     - countryRoutes.js
   - services
     - getDataFactory.js
-  - app.js:
+  - app.js
 - views
   - details.html
   - search-results.html
