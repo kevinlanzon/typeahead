@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1",
-    "pretest": "npm install"
+    "start": "http-server -a localhost -p 3000 -c-1"
   },
   "repository": {
     "type": "git",
